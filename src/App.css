@@ -295,11 +295,11 @@ body {
 .horizontal-title {
 	width: 70vw;
 	min-width: 250px;
-	height: 55px;
+	height: 50px;
 }
 
 .vertical-title {
-	width: 50px;
+	width: 55px;
 	height: 550px;
 }
 
@@ -437,6 +437,46 @@ body {
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#191923", endColorstr="#ffffff", GradientType=1 );
 }
 
+.bg-gradient-orange-bottom {
+	/*   roatation - 270*  */
+	background: hsla(240, 17%, 12%, 1);
+
+	background: linear-gradient(
+		270deg,
+		hsla(240, 17%, 12%, 1) 0%,
+		hsla(0, 0%, 100%, 1) 4%,
+		hsla(0, 0%, 100%, 1) 30%,
+		hsla(214, 20%, 80%, 1) 43%,
+		hsla(36, 100%, 55%, 1) 55%,
+		hsla(353, 86%, 54%, 1) 94%,
+		hsla(240, 17%, 12%, 1) 100%
+	);
+
+	background: -moz-linear-gradient(
+		270deg,
+		hsla(240, 17%, 12%, 1) 0%,
+		hsla(0, 0%, 100%, 1) 4%,
+		hsla(0, 0%, 100%, 1) 30%,
+		hsla(214, 20%, 80%, 1) 43%,
+		hsla(36, 100%, 55%, 1) 55%,
+		hsla(353, 86%, 54%, 1) 94%,
+		hsla(240, 17%, 12%, 1) 100%
+	);
+
+	background: -webkit-linear-gradient(
+		270deg,
+		hsla(240, 17%, 12%, 1) 0%,
+		hsla(0, 0%, 100%, 1) 4%,
+		hsla(0, 0%, 100%, 1) 30%,
+		hsla(214, 20%, 80%, 1) 43%,
+		hsla(36, 100%, 55%, 1) 55%,
+		hsla(353, 86%, 54%, 1) 94%,
+		hsla(240, 17%, 12%, 1) 100%
+	);
+
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#191923", endColorstr="#ffffff", GradientType=1 );
+}
+
 .bg-gradient-orange-right {
 	background: hsla(240, 17%, 12%, 1);
 
@@ -474,26 +514,6 @@ body {
 	);
 
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#191923", endColorstr="#ffffff", GradientType=1 );
-}
-
-.bg-gradient-orange-bottom {
-	background: hsla(202, 46%, 72%, 1);
-
-	background: linear-gradient(
-		270deg,
-		hsla(202, 46%, 72%, 1) 0%,
-		hsla(182, 82%, 93%, 1) 17%,
-		hsla(12, 83%, 62%, 1) 62%
-	);
-
-	background: -webkit-linear-gradient(
-		270deg,
-		hsla(202, 46%, 72%, 1) 0%,
-		hsla(182, 82%, 93%, 1) 17%,
-		hsla(12, 83%, 62%, 1) 62%
-	);
-
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#98c1d9", endColorstr="#e0fbfc", GradientType=1 );
 }
 /* //////////////////      Section End       //////////////////////// */
 /* /////////////////////////////////////////////////////////////////// */

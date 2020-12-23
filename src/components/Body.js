@@ -13,7 +13,7 @@ const Body = () => {
 			</section>
 			<section className='section-container'>
 				<div className='section-title horizontal-title bg-gradient-orange-right'>
-					Super Ellis!
+					Black Panther!
 				</div>
 				<div className='content-bubble bubble-left'>
 					<img className='superPic' src={panther} alt='panther'></img>
@@ -39,12 +39,10 @@ const Body = () => {
 			</section>
 
 			{/* Section 3 */}
-			<section
-				className='section-container'
-				id='flex-row'
-				style={{ border: '2px solid pink' }}
-			>
-				<div className='section-title horizontal-title bg-gradient-orange-right'></div>
+			<section className='section-container' id='flex-row'>
+				<div className='section-title horizontal-title bg-gradient-orange-right'>
+					Some advice from Barack
+				</div>
 				<div className='content-container'>
 					<div className='content-bubble bubble-right'>
 						{' '}
@@ -64,16 +62,18 @@ const Body = () => {
 			</section>
 
 			{/* //////////////////////// Section 4 /////////////////////////*/}
-			<section
-				className='section-container'
-				style={{ border: '2px solid pink' }}
-			>
+			<section className='section-container'>
 				<div className='content-container'>
 					<div className='content-bubble shape-portrait '>
 						<img className='superPic' src={workin} alt='workin-man'></img>
 					</div>
 				</div>
-				<div className='section-title square-title bg-gradient-orange-top' />
+				<div
+					className='section-title square-title bg-gradient-orange-bottom'
+					style={{ paddingLeft: '25px' }}
+				>
+					Workin' It
+				</div>
 			</section>
 			{/* //////////////////////// Section 4 /////////////////////////*/}
 		</div>
