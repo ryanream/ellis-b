@@ -10,6 +10,11 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.App {
+	/* margin-right: 1%; */
+	min-width: 200px;
+	/* overflow-x: hidden; */
+}
 
 /* /////////////////////////////////////////////////////////////////// */
 /* //////////////////      Header Start       //////////////////////// */
@@ -29,6 +34,20 @@
 	/* border: 10px solid black; */
 
 	/* background-color: #e0fbfc; */
+	font-size: calc(10px + 2vmin);
+
+	height: 80vmin;
+	width: 100vw;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	position: fixed;
+	top: 0;
+
 	background: hsla(214, 20%, 80%, 1);
 
 	background: radial-gradient(
@@ -59,19 +78,6 @@
 	);
 
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#c1cad6", endColorstr="#FFFFFF", GradientType=1 );
-	font-size: calc(10px + 2vmin);
-
-	height: 80vmin;
-	width: 100vw;
-	padding: 20px;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
-	position: fixed;
-	top: 0;
 }
 
 /* .App-link {
@@ -259,14 +265,13 @@ body {
 /* //////////////////      Sections       //////////////////////// */
 
 .section-container {
-	/* border: 5px solid orange; */
-
 	width: 100vw;
-	height: 950px;
+	height: 100vh;
 
 	padding: 2%;
 
-	overflow-x: hidden;
+	margin-top: 55px;
+	overflow: hidden;
 }
 
 #flex-row {
@@ -278,12 +283,13 @@ body {
 	padding: 10px;
 	padding-left: 50px;
 	font-family: 'Goldman', cursive;
-	/* weights:  400 | 700 (bold) */
 	font-weight: 700;
 	font-size: 28px;
 
+	/* font-family: 'Goldman', cursive; */
+	/* font-weight:  400 | 700 (bold) */
 	/* font-family: 'Rowdies', cursive; */
-	/* weights: 300 | 400 | 700 */
+	/* font-weight: 300 | 400 | 700 */
 }
 
 .horizontal-title {
@@ -298,16 +304,97 @@ body {
 }
 
 .title-right {
-	/* border: 3px solid salmon; */
 	margin-left: -10px;
 	margin-top: -25px;
 	z-index: -1;
-	/* position: absolute; */
+}
+
+.slide-right {
+	float: right;
 }
 
 .square-title {
 	width: 200px;
 	height: 200px;
+}
+
+.superPic {
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+
+	object-fit: contain;
+}
+
+.content-container {
+	width: 90vw;
+	height: 100%;
+	padding-top: 45px;
+	padding-left: 45px;
+
+	position: absolute;
+}
+.content-bubble {
+	background-color: aliceblue;
+	border-radius: 15px;
+	padding: 15px;
+}
+
+.shape-portrait {
+	height: 80vh;
+	width: 60vh;
+	max-width: 90%;
+	/* min-width: 200px; */
+}
+.shape-landscape {
+	height: 60vh;
+	width: 80vh;
+	min-width: 200px;
+}
+.shape-square {
+	height: 60vh;
+	width: 60vh;
+	min-width: 200px;
+}
+
+.bubble-left {
+	margin-left: 15px;
+	margin-top: -10px;
+
+	width: 40vw;
+	min-width: 200px;
+	max-width: 1000px;
+
+	height: 90vh;
+
+	/* display: flex; */
+}
+
+.bubble-top {
+	margin-left: 35px;
+	margin-top: -165px;
+
+	width: 20vw;
+	min-width: 200px;
+	height: 500px;
+}
+
+.bubble-right {
+	margin-left: 10%;
+	margin-top: -10px;
+
+	width: 70vw;
+	min-width: 200px;
+	height: 500px;
+}
+
+.bubble-horizontal {
+	margin-left: -10px;
+	margin-top: 10px;
+	/* margin: auto; */
+	width: 80vw;
+	min-width: 200px;
+	height: 300px;
 }
 
 .bg-gradient-orange-top {
@@ -408,61 +495,6 @@ body {
 
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#98c1d9", endColorstr="#e0fbfc", GradientType=1 );
 }
-
-.superPic {
-	height: 100%;
-	width: 100%;
-	border-radius: 10px;
-
-	object-fit: contain;
-}
-
-.content-bubble {
-	background-color: aliceblue;
-	border-radius: 15px;
-
-	padding: 15px;
-}
-.bubble-left {
-	margin-left: 15px;
-	margin-top: -10px;
-
-	width: 40vw;
-	min-width: 200px;
-	max-width: 1000px;
-
-	height: 800px;
-
-	/* display: flex; */
-}
-
-.bubble-top-left {
-	margin-left: 35px;
-	margin-top: -165px;
-
-	width: 40vw;
-	min-width: 200px;
-	height: 500px;
-}
-
-.bubble-right {
-	margin-left: 10%;
-	margin-top: -10px;
-
-	width: 70vw;
-	min-width: 200px;
-	height: 500px;
-}
-
-.bubble-horizontal {
-	margin-left: -10px;
-	margin-top: 10px;
-
-	width: 80vw;
-	min-width: 200px;
-	height: 300px;
-}
-
 /* //////////////////      Section End       //////////////////////// */
 /* /////////////////////////////////////////////////////////////////// */
 

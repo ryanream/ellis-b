@@ -1,5 +1,8 @@
 import React from 'react';
 import panther from '../assets/panther-crawl.JPG';
+import panther2 from '../assets/panther-growl.JPG';
+import workin from '../assets/workin-man.jpg';
+import chair from '../assets/chair-lovies.jpg';
 
 const Body = () => {
 	return (
@@ -36,54 +39,43 @@ const Body = () => {
 			</section>
 
 			{/* Section 3 */}
-			<section className='section-container' id='flex-row'>
-				<div className='content-bubble bubble-right'>
-					{' '}
-					<iframe
-						width='100%'
-						height='100%'
-						objectFit='contain'
-						// style={{ width: '1343', height: '480' }}
-						src='https://www.youtube.com/embed/I49VNQ6lmKk'
-						frameborder='0'
-						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-						allowfullscreen='allowfullscreen'
-						title='Barrack and Marquise'
-					></iframe>
+			<section
+				className='section-container'
+				id='flex-row'
+				style={{ border: '2px solid pink' }}
+			>
+				<div className='section-title horizontal-title bg-gradient-orange-right'></div>
+				<div className='content-container'>
+					<div className='content-bubble bubble-right'>
+						{' '}
+						<iframe
+							width='100%'
+							height='100%'
+							objectFit='contain'
+							// style={{ width: '1343', height: '480' }}
+							src='https://www.youtube.com/embed/I49VNQ6lmKk'
+							frameborder='0'
+							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+							allowfullscreen='allowfullscreen'
+							title='Barrack and Marquise'
+						></iframe>
+					</div>
 				</div>
-				<div className='section-title vertical-title title-right bg-gradient-orange-top'></div>
 			</section>
 
-			{/* Section 4 */}
-			<section className='section-container'>
-				<div className='section-title square-title bg-gradient-orange-top'></div>
-				<div className='content-bubble bubble-top-left'></div>
+			{/* //////////////////////// Section 4 /////////////////////////*/}
+			<section
+				className='section-container'
+				style={{ border: '2px solid pink' }}
+			>
+				<div className='content-container'>
+					<div className='content-bubble shape-portrait '>
+						<img className='superPic' src={workin} alt='workin-man'></img>
+					</div>
+				</div>
+				<div className='section-title square-title bg-gradient-orange-top' />
 			</section>
-
-			{/* <div className='box'>Box 1</div>
-			<div className='box'>Box 2</div>
-			<div className='box'>Box 3</div>
-			<div className='box'>Box 4</div>
-			<div className='box'>Box 5</div>
-			<div className='box'>Box 6</div>
-			<div className='box'>Box 7</div>
-			<div className='box'>Box 8</div>
-			<div className='box'>Box 9</div>
-			<div className='box'>Box 10</div>
-			<div className='box'>Box 11</div>
-			<div className='box'>Box 12</div>
-			<div className='box'>Box 1b</div>
-			<div className='box'>Box 2b</div>
-			<div className='box'>Box 3b</div>
-			<div className='box'>Box 4b</div>
-			<div className='box'>Box 5b</div>
-			<div className='box'>Box 6b</div>
-			<div className='box'>Box 7b</div>
-			<div className='box'>Box 8b</div>
-			<div className='box'>Box 9b</div>
-			<div className='box'>Box 10b</div>
-			<div className='box'>Box 11b</div>
-			<div className='box'>Box 12b</div> */}
+			{/* //////////////////////// Section 4 /////////////////////////*/}
 		</div>
 	);
 };
